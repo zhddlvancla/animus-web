@@ -49,7 +49,7 @@
     <style>
         /* 동기화 불안정/안정 상태 테마 컬러 제어 */
         :root {
-            --theme-rgb: 153 27 27; /* 기본 불안정 상태: 어두운 붉은색 */
+            --theme-rgb: 255 40 40; /* 기본 불안정 상태: 채도가 높은 붉은색 */
         }
         body.sync-stable {
             --theme-rgb: 74 222 128; /* 동기화 완료 상태: 에메랄드 그린 */
@@ -357,7 +357,7 @@
                     <span class="material-symbols-outlined">info</span>
                     핵심 데이터 복구
                 </h3>
-                <p id="origin-popup-text" class="text-animus-text-light leading-relaxed font-kr break-keep text-xl md:text-2xl font-medium">
+                <p id="origin-popup-text" class="text-animus-text-light leading-relaxed font-kr break-keep text-2xl md:text-4xl font-medium">
                     농사를 짓기 시작하면서 인류는 기름진 평야가 펼쳐진 큰 강 주변에 모여 살았다. 사람들은 홍수를 막고자 강가에 둑을 쌓고, 가뭄에 대비해 농지에 물을 대는 관개 시설을 만들었다. 주변에서 구하기 힘든 자원은 물길을 따라 다른 지역과 교역하면서 얻었다.
                 </p>
             </div>
@@ -857,8 +857,8 @@
 
         if (content) content.innerHTML = `
             <div class="lg:col-span-2 space-y-2 lg:pr-8 lg:border-r border-white/10">
-                <h3 class="text-3xl font-bold text-animus-ai font-tech uppercase tracking-widest mb-6 border-b border-animus-ai/30 pb-3 inline-block">
-                    <span class="material-symbols-outlined align-middle mr-2 text-3xl">import_contacts</span> 핵심 데이터 아카이브
+                <h3 class="text-xl font-bold text-animus-ai font-tech uppercase tracking-widest mb-4 border-b border-animus-ai/30 pb-2 inline-block">
+                    <span class="material-symbols-outlined align-middle mr-2 text-xl">import_contacts</span> 핵심 데이터 아카이브
                 </h3>
                 ${coreDataHTML}
             </div>
